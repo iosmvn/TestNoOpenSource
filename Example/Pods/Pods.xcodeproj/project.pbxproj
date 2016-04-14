@@ -100,10 +100,11 @@
 		9D7AC4BCF7747DF809EEF4E979CBB7F2 /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = DACE406B2E53BE18445F22E26993E5B9 /* SpectaDSL.m */; };
 		A090E1335802D26E75D008CC54E3EBE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5089DA448F1CB0FB085C4E12AFDD53A2 /* XCTest.framework */; };
 		A1DCF9A9C12B7883BBEC2B985690A9F7 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 768E0C437692539220C0D4D914229388 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4C2C3F81CBF7E9200D5C8CD /* AUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C2C3F61CBF7E9200D5C8CD /* AUtil.h */; };
-		A4C2C3F91CBF7E9200D5C8CD /* AUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2C3F71CBF7E9200D5C8CD /* AUtil.m */; };
-		A4C2C3FC1CBF7EA400D5C8CD /* BUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C2C3FA1CBF7EA400D5C8CD /* BUtil.h */; };
-		A4C2C3FD1CBF7EA400D5C8CD /* BUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2C3FB1CBF7EA400D5C8CD /* BUtil.m */; };
+		A4C2C4031CBF820000D5C8CD /* AUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C2C3F61CBF7E9200D5C8CD /* AUtil.h */; };
+		A4C2C4041CBF820400D5C8CD /* AUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2C3F71CBF7E9200D5C8CD /* AUtil.m */; };
+		A4C2C4051CBF820A00D5C8CD /* BUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C2C3FA1CBF7EA400D5C8CD /* BUtil.h */; };
+		A4C2C4061CBF820D00D5C8CD /* BUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C2C3FB1CBF7EA400D5C8CD /* BUtil.m */; };
+		A4C2C4071CBF821500D5C8CD /* SDKKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C2C4021CBF7ECD00D5C8CD /* SDKKit.h */; };
 		AEB4CB6D2E7963B3E0A0385E27F37064 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE880572CC4AF9A3FB007D3FBAB3FC9 /* SpectaUtility.m */; };
 		AF1F46668D4591602887998C6E9C10AD /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 99C6B238F553535C865A990AB217F102 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFB2EA4713BB39AAE44B42D251BC0FBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF01F310BCD4F2E114A0BB3796FAA47 /* Foundation.framework */; };
@@ -908,6 +909,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C2C4071CBF821500D5C8CD /* SDKKit.h in Headers */,
+				A4C2C4051CBF820A00D5C8CD /* BUtil.h in Headers */,
+				A4C2C4031CBF820000D5C8CD /* AUtil.h in Headers */,
 				DF54046EC87DA7469456847CED2CCB1D /* TestNoOpenSource-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -935,7 +939,6 @@
 				AFFC8900E52BBEC72059334132F3A8F3 /* ExpectaSupport.h in Headers */,
 				67459AD239EF669A365519E06B45DCFE /* EXPExpect.h in Headers */,
 				6E1D978790705E137FDE439AA68DD3AA /* EXPFloatTuple.h in Headers */,
-				A4C2C3FC1CBF7EA400D5C8CD /* BUtil.h in Headers */,
 				65BC31095CCDFC80CBF6BBA843751F23 /* EXPMatcher.h in Headers */,
 				8C8C1B0D83FE6A4352F15154DB16372C /* EXPMatcherHelpers.h in Headers */,
 				AF1F46668D4591602887998C6E9C10AD /* EXPMatchers+beCloseTo.h in Headers */,
@@ -945,7 +948,6 @@
 				372F7A9CCE59CE86316CF436F832A3FC /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
 				E0AAF49134A0505DF00E20E7B62087E1 /* EXPMatchers+beIdenticalTo.h in Headers */,
 				34B6E9A30603BEBBD87BA535B7D384CA /* EXPMatchers+beInstanceOf.h in Headers */,
-				A4C2C3F81CBF7E9200D5C8CD /* AUtil.h in Headers */,
 				131532787AD40BE1F35DF288D2E6FFD7 /* EXPMatchers+beInTheRangeOf.h in Headers */,
 				79558B1F97ABE4AB8942DC18BEBD4B82 /* EXPMatchers+beKindOf.h in Headers */,
 				0D16B556212D317A0D4FEB71E102E207 /* EXPMatchers+beLessThan.h in Headers */,
@@ -1254,10 +1256,8 @@
 				4BBCBB9D8EF0B241A4A4FE4982985481 /* ExpectaSupport.m in Sources */,
 				805E425BBEF7A6133E32E1D30A073010 /* EXPExpect.m in Sources */,
 				CE3F4ECBB0BC095577D66AE50C8E604C /* EXPFloatTuple.m in Sources */,
-				A4C2C3FD1CBF7EA400D5C8CD /* BUtil.m in Sources */,
 				201BF9C605852822CA5A65ADE282A310 /* EXPMatcherHelpers.m in Sources */,
 				BA12B131F10BCE3BE6E9A02FC908FE9D /* EXPMatchers+beCloseTo.m in Sources */,
-				A4C2C3F91CBF7E9200D5C8CD /* AUtil.m in Sources */,
 				17572374B2AE183C6347C41E8DF8E579 /* EXPMatchers+beFalsy.m in Sources */,
 				F12D57414A73406831CC032A7170DBFF /* EXPMatchers+beginWith.m in Sources */,
 				1312A7D381C51428CF481E33E3D37901 /* EXPMatchers+beGreaterThan.m in Sources */,
@@ -1291,7 +1291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C2C4041CBF820400D5C8CD /* AUtil.m in Sources */,
 				BF41E5134D1A43AD802C07DB35064046 /* ReplaceMe.m in Sources */,
+				A4C2C4061CBF820D00D5C8CD /* BUtil.m in Sources */,
 				F8C45E3A737AD90AEF4CB8833A6292D5 /* TestNoOpenSource-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
