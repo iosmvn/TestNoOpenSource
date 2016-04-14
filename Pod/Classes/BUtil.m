@@ -11,7 +11,7 @@
 @implementation BUtil
 
 - (void)bMethod:(NSString *)str {
-    NSLog(@"BUtil=bMethod----%@", str)
+    NSLog(@"BUtil=bMethod----%@", str);
 }
 
 

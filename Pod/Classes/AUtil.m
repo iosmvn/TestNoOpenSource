@@ -12,7 +12,7 @@
 
 
 - (void)aMethod:(NSString *)str {
-    NSLog(@"AUtil=aMethod----%@", str)
+    NSLog(@"AUtil=aMethod----%@", str);
 }
 
 @end
